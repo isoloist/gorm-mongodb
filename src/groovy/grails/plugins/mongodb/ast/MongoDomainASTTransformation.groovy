@@ -171,7 +171,7 @@ class MongoDomainASTTransformation implements ASTTransformation {
     }
 	}
 
-  private PropertyNode getProperty(ClassNode classNode, String propertyName) {
+  def PropertyNode getProperty(ClassNode classNode, String propertyName) {
     if (classNode == null || StringUtils.isBlank(propertyName))
       return null
 
